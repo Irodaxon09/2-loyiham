@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+h2{
+    position: relative;
+    font-size: 6em;
+    color: #222;
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 780px;
+    overflow: hidden;
+    white-space: nowrap;
+    filter: drop-shadow( 0 0 10px red) drop-shadow( 0 0 10px #fff);
+}
